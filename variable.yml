@@ -6,4 +6,4 @@
       vars:
         url = "kishore"
       ansible.builtin.debug:
-        msg: the varible value is {{url}}  
+        msg: the varible value is {{ url }}  

@@ -1,5 +1,5 @@
 - name: check for the global variable
-  hosts: all
+  hosts: localhost
   connection: local
   vars:
     name: "don"

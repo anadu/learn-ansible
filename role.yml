@@ -1,0 +1,5 @@
+- name: check for the role variable
+  hosts: localhost
+  connection: local
+  roles:
+    - sample

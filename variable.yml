@@ -1,9 +1,9 @@
-- name: learning variables
+- name: learning the variables
   hosts: localhost
   connection: local
   tasks:
-    - name: print the variables
+    - name: writing down the variales inside the plays
       vars:
-        url: "kishore"
+        url: "manoj"
       ansible.builtin.debug:
-        msg: the varible value is {{ url }}  
+        msg: the varible of the url is {{ url }}  

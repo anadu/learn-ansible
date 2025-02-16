@@ -4,6 +4,6 @@
   tasks:
     - name: print the variables
       vars:
-        url = "kishore"
+        url: "kishore"
       ansible.builtin.debug:
         msg: the varible value is {{ url }}  

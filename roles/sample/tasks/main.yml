@@ -1,3 +1,8 @@
 - name: name of the global variable
   ansible.builtin.debug:
-    msg: the magic is {{ name }} 
+    msg: the global variable is {{ name }} 
+- name: name of the variable
+  vars:
+    magic: "donotmagic"
+  ansible.builtin.debug:
+    msg: the magic is {{ magic }} 

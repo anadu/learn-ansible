@@ -5,5 +5,5 @@
     - name: print the variables
       vars:
         url = "kishore"
-     ansible.builtin.debug:
-       msg: the varible value is {{url}}  
+      ansible.builtin.debug:
+        msg: the varible value is {{url}}  

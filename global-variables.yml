@@ -13,5 +13,8 @@
         msg: the magic is {{ magic }}  
     - name: name of the global variable
       ansible.builtin.debug:
-        msg: the magic is {{ magic }}  
+        msg: the magic is {{ magic }} 
+    - name: value from the var-files
+      ansible.builtin.debug:
+        msg: the heloowiord is {{ magic }}     
            

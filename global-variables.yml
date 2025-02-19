@@ -2,7 +2,7 @@
   hosts: localhost
   connection: local
   vars:
-    name: "don"
+    magic: "don"
   tasks:
     - name: name of the variable
       vars:
@@ -11,5 +11,5 @@
         msg: the magic is {{ magic }}  
     - name: name of the global variable
       ansible.builtin.debug:
-        msg: the magic is {{ name }}  
+        msg: the magic is {{ magic }}  
            

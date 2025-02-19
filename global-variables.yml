@@ -3,6 +3,8 @@
   connection: local
   vars:
     magic: "don"
+  var-files:
+    - passingfromfile.yaml  
   tasks:
     - name: name of the variable
       vars:

@@ -1,0 +1,12 @@
+ - name: registry
+   hosts: localhost
+   connection: local
+   tasks:
+    - name: capture the ouptut to using registry module or collection
+      ansible.builtin.shell: ls -lrt
+      registry: out
+    - name: taking the out put as input to the previous task  to give the this task to the as input
+      ansible.builtin.debug:
+        msg: "{{ out }}"
+
+

@@ -1,0 +1,8 @@
+- name: condition
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: name of the task
+      when: VAL > 10
+      ansible.builtin.debug:
+        msg: "{{ VAL }}"

@@ -4,7 +4,7 @@
   vars:
     magic: "don"
   vars_files:
-    - passingfromfile.yaml  
+    - paasingfromfile.yaml  
   tasks:
     - name: name of the variable
       vars:

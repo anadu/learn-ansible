@@ -3,6 +3,6 @@
   connection: local
   tasks:
     - name: name of the task
-      when: VAL > 10
+      when:  VAL |  int > 10
       ansible.builtin.debug:
-        msg: "{{ VAL }}"
+        msg: "{{ VAL }} is greater than 10"

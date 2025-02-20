@@ -1,0 +1,11 @@
+- name: loopfile
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: learning for the loops
+      ansible.builtin.debug:
+        msg: "list of names {{ item }}"
+      loop:
+      - kishore
+      - manoj
+      - orange  

@@ -1,0 +1,10 @@
+- name: name of the nested loops
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: name of the loop
+      ansible.builtin.debug:
+        msg: the item name is {{ item.name }} and the quanity is {{ item.value }}
+      loop:
+      - { name: kishore, value: 10 } 
+      - { name: manoj, value: 20 } 

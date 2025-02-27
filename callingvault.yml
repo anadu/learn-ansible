@@ -1,6 +1,6 @@
 - name: calling the vault
   hosts: localhost
-  conection: local
+  connection: local
   tasks:
     - name: calling the secret
       ansible.builtin.debug:

@@ -1,3 +1,4 @@
+---
 - name: calling the vault
   hosts: localhost
   connection: local

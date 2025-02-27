@@ -2,7 +2,11 @@
    hosts: localhost
    connection: local
    tasks:
-     - name: install the vault
-       ansible.builtin.dnf:
-         name: vault
-         state: installed
+    - name: Download Vault repo file
+      ansible.builtin.get_url:
+      url: https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+      dest: /etc/yum.repos.d/hashicorp.repo
+    - name: install the vault
+      ansible.builtin.dnf:
+        name: nginx
+        state: installed  

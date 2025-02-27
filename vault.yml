@@ -1,0 +1,8 @@
+ - name: vault
+   hosts: localhost
+   connection: local
+   tasks:
+     - name: install the vault
+       ansible.builtin.dnf:
+         name: vault
+         state: installed

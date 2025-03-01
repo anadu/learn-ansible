@@ -1,8 +1,7 @@
----
-- name: calling the vault
+- name: Hashicorp vault connect
   hosts: localhost
   connection: local
   tasks:
-    - name: calling the secret
+    - name: Print
       ansible.builtin.debug:
-        msg: "Password - {{ lookup('community.hashi_vault.hashi_vault', 'secret=test2/data/data12:password token={{ vault-token }} url=http://20.124.80.192:8200/') }}"
+        msg: "Password - {{ lookup('community.hashi_vault.hashi_vault', 'secret=test2/data/data12:password token={{ vault_token }} url=http://20.124.80.192:8200') }}

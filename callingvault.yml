@@ -5,4 +5,4 @@
   tasks:
     - name: calling the secret
       ansible.builtin.debug:
-        msg: "Password - {{ lookup('community.hashi_vault.hashi_vault', 'secret=test2/data/demos-winsh:password token={{ vault-token }} url=http://52.224.245.194:8200/') }}"
+        msg: "Password - {{ lookup('community.hashi_vault.hashi_vault', 'secret=/test2/data/data12:password token={{ vault-token }} url=http://52.224.245.194:8200/') }}"

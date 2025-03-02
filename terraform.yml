@@ -9,4 +9,4 @@
      - name: terraform installed
        ansible.builtin.dnf:
          name: terraform
-         state: absence  
+         state: absent
